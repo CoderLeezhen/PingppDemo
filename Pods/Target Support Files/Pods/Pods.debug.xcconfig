@@ -1,0 +1,7 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Pingpp/lib/Channels/Alipay"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Pingpp"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Pingpp/lib/Channels/Alipay" $(inherited) "${PODS_ROOT}/Pingpp/lib" $(inherited) "${PODS_ROOT}/Pingpp/lib/Channels/Network" $(inherited) "${PODS_ROOT}/Pingpp/lib/Channels/UnionPay" $(inherited) "${PODS_ROOT}/Pingpp/lib/Channels/UnionPay"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/Pingpp"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"UPPayPlugin" -l"c++" -l"pingpp+alipay" -l"pingpp+network" -l"pingpp+up" -l"pingppcore" -l"stdc++" -l"z" -framework "AlipaySDK" -framework "CFNetwork" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
+PODS_ROOT = ${SRCROOT}/Pods
